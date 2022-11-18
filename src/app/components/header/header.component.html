@@ -1,0 +1,8 @@
+<div
+  *ngIf='currencies.cc === "USD" || currencies.cc === "EUR" || currencies.cc === "GBP"'
+  class='py-4 px-2 border rounded flex items-center flex-col mb-2 mr-10'
+>
+  <h2 class='mb-2 text-md text-center'>{{currencies.txt}}</h2>
+  <p> {{currencies.cc}}</p>
+  <p>Price: <span class='font-bold'>{{currencies.rate}}</span></p>
+</div>
